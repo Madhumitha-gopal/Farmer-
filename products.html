@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fresh farming</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(168, 237, 172);
+        }
+
+        header {
+            background-color: #1aad2d;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header input {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            width: 50%;
+        }
+
+        nav {
+            background-color: rgb(193, 247, 168);
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-size: 14px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 6px;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+
+            &:hover {
+                background-color: #000000;
+                color: white;
+            }
+        }
+
+
+        .notice {
+            background-color: #ffeaa7;
+            text-align: center;
+            padding: 8px;
+            color: #444;
+        }
+
+        .section {
+            padding: 15px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product {
+
+            background-color: white;
+            padding: 30px;
+            border-radius: 45px;
+            width: 45%;
+            position: relative;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 80%;
+            height: 100px;
+            border-radius: 5px;
+        }
+
+        .product h4 {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .price {
+            font-size: 13px;
+            color: green;
+        }
+
+        .weight {
+            font-size: 12px;
+            color: gray;
+        }
+
+        .add-btn {
+            margin-top: 5px;
+            display: block;
+            background-color: #1aad2d;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        @media(min-width: 768px) {
+            .product {
+                width: 22%;
+            }
+
+            header input {
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>Fresh Farming</div>
+        <input type="text" placeholder="Search products..." style="margin-right:400px;">
+    </header>
+    <nav>
+        <span><a href="#veg">Vegetables</a></span>
+        <span><a href="#fru">Fruits</a></span>
+        <span><a href="#cold">Fresh Juices</a></span>
+        <span><a href="#gram">Organic grams</a></span>
+
+    </nav>
+    <div class="section" id="veg">
+        <h2>Vegetables</h2>
+        <div class="products">
+            <div class="product">
+                <img src="onion-removebg-preview.png" alt="onion" style="width:130px">
+                <h4>Onion</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+
+            <div class="product">
+
+                <img src="mushroom-removebg-preview.png" alt="mushroom">
+                <h4>Mushroom</h4>
+                <div class="price">₹47</div>
+                <div class="weight">500 g</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+
+            <div class="product">
+
+                <img src="carrot-removebg-preview.png" alt="carrot" style="width:130px">
+                <h4>carrot</h4>
+                <div class="price">₹30.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+
+            <div class="product">
+
+                <img src="beans-removebg-preview.png" alt="beans" style="">
+                <h4>beans</h4>
+                <div class="price">₹51.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+
+                <img src="bottle_guard-removebg-preview.png" alt="bottle-guard">
+                <h4>bottle-guard</h4>
+                <div class="price">₹32/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+
+                <img src="ladies_finger-removebg-preview.png" alt="ladies">
+                <h4>ladies finger</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+
+                <img src="tomoto-removebg-preview.png" alt="tomoto">
+                <h4>tomoto</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+
+                <img src="potato 2.jpeg" alt="potato">
+                <h4>potato</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="fru">
+        <h2>Fruits</h2>
+        <div class="products">
+            <div class="product">
+
+                <img src="apple.jpeg" alt="apple">
+                <h4>apple</h4>
+                <div class="price">₹99.5</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+
+            <div class="product">
+                <img src="strawberry.jpeg" alt="strawberry">
+                <h4>strawberry</h4>
+                <div class="price">₹42.5</div>
+                <div class="weight">1 pc</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+
+            <div class="product">
+
+                <img src="banana.jpeg" alt="banana">
+                <h4>banana</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+                <img src="pineapple.jpeg" alt="pineapple">
+                <h4>pineapple</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+
+                <img src="pomagranate.jpeg" alt="pomagranate">
+                <h4>pomagranate</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+
+                <img src="orange.jpeg" alt="orange">
+                <h4>Orange</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+
+                <img src="papaya.jpeg" alt="papaya">
+                <h4>papaya</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+
+                <img src="grapes 2.jpeg" alt="grapes">
+                <h4>grapes</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="cold">
+        <h2>Cold Drinks & Juices</h2>
+        <div class="products">
+            <div class="product">
+                <img src="lemon juice.jpeg" alt="lemeon">
+                <h4>lemeon</h4>
+                <div class="price">₹102</div>
+                <div class="weight">1 L</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+
+            <div class="product">
+                <img src="carrot juice.jpeg" alt="Carrot juice">
+                <h4>Carrot</h4>
+                <div class="price">₹31</div>
+                <div class="weight">1.25 L</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+                <img src="mango juice 2.jpeg" alt="MANGO">
+                <h4>Mango</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+                <img src="strawberry 1.jpeg" alt="strawberry">
+                <h4>Strawberry</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+
+                <img src="rose milk.jpeg" alt="rosemilk">
+                <h4>Rose Milk</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+
+                <img src="badam milk2.jpeg" alt="badam">
+                <h4>badam Milk</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+
+                <img src="grapes juice.jpeg" alt="grape juice">
+                <h4>Grape juice</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+                <img src="orange 1.jpeg" alt="orange">
+                <h4>Orange</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="gram">
+        <h2>Organic grams</h2>
+        <div class="products">
+            <div class="product">
+                <img src="green gram.jpeg" alt="green gram">
+                <h4>Green gram</h4>
+                <div class="price">₹102</div>
+                <div class="weight">1 Kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+
+            <div class="product">
+                <img src="red gram.jpeg" alt="red gram">
+                <h4>Red gram</h4>
+                <div class="price">₹31</div>
+                <div class="weight">1.25 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+                <img src="horse gram.jpeg" alt="horse gram">
+                <h4>Horse gram</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+                <img src="black horse gram.jpeg" alt="black horse gram">
+                <h4>Black horse gram</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+
+                <img src="urad chilka.jpeg" alt="urad chilka dal">
+                <h4>urad chilka dal</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+
+                <img src="kambu.jpeg" alt="kambu">
+                <h4>Pearl Millet</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+
+                <img src="solam.jpeg" alt="solam">
+                <h4>sorghum Millet</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+            <div class="product">
+                <img src="wheat.jpeg" alt="wheat">
+                <h4>wheat</h4>
+                <div class="price">₹39.5/Pack</div>
+                <div class="weight">1 kg</div>
+                <a href="#" class="add-btn">ADD</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
